@@ -1,7 +1,4 @@
 .app-container {
     display: flex;
-}
-
-.others {
-    flex: 4;
+    margin-top: 20px;
 }

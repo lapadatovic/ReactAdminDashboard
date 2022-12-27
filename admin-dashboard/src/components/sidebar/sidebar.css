@@ -2,12 +2,48 @@ ul {
     list-style: none;
 }
 
-
 .sidebar-container {
     flex: 1;
     height: calc(100vh - 50px);
-    background-color: bisque;
+    background-color: rgb(248, 248, 248);
     position: sticky;
     top: 50px;
 }
 
+.sidebar-wrapper {
+    padding: 20px;
+    color: #555;
+}
+
+.sidebar-menu {
+    margin-bottom: 15px;
+}
+
+.sidebar-title {
+    font-size: 1rem;
+    color: rgb(128, 125, 125);
+    margin-bottom: 10px;
+}
+
+.sidebar-list {
+    padding: 5px;
+}
+
+.sidebar-list-item {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.sidebar-list-item.active, .sidebar-list-item:hover {
+    background-color: #555;
+    color: white;
+    transition: .3s ease-in;
+}
+
+.sidebar-list-icon {
+    font-size: 1.2rem !important;
+    margin-right: 5px;
+}
