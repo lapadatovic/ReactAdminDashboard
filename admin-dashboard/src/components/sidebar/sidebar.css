@@ -1,0 +1,13 @@
+ul {
+    list-style: none;
+}
+
+
+.sidebar-container {
+    flex: 1;
+    height: calc(100vh - 50px);
+    background-color: bisque;
+    position: sticky;
+    top: 50px;
+}
+
