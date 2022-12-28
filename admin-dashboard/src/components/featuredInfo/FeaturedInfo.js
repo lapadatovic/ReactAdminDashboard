@@ -12,7 +12,7 @@ export default function FeaturedInfo() {
                 <span className='featured-money'> $2,454</span>
                 <span className='featured-money-rate'>
                     -11.4
-                    <AiOutlineArrowDown className='minus'/>
+                    <AiOutlineArrowDown className='featured-icon minus'/>
                 </span>
             </div>
             <span className="featured-sub">Compared to last month</span>
@@ -24,7 +24,7 @@ export default function FeaturedInfo() {
                 <span className='featured-money'> $4,454</span>
                 <span className='featured-money-rate'>
                     -1.4
-                    <AiOutlineArrowDown className='minus'/>
+                    <AiOutlineArrowDown className=' featured-icon minus'/>
                 </span>
             </div>
             <span className="featured-sub">Compared to last month</span>
@@ -36,7 +36,7 @@ export default function FeaturedInfo() {
                 <span className='featured-money'> $2,023</span>
                 <span className='featured-money-rate'>
                     +2.1
-                    <AiOutlineArrowUp className='plus'/>
+                    <AiOutlineArrowUp className='featured-icon plus'/>
                 </span>
             </div>
             <span className="featured-sub">Compared to last month</span>
