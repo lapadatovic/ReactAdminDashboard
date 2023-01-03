@@ -1,14 +1,14 @@
 import './app.css'
 import Home from './components/pages/home/Home';
-import Rightbar from "./components/rightbar/Rightbar";
+// import Rightbar from "./components/rightbar/Rightbar";
 import Sidebar from "./components/sidebar/Sidebar";
 import Topbar from "./components/topbar/Topbar";
 import UserList from './components/pages/userList/UserList';
+import User from './components/pages/user/User';
 import {
 	BrowserRouter as Router,
 	Routes,
 	Route,
-	Link
 } from 'react-router-dom';
 
 
@@ -21,6 +21,7 @@ function App() {
         <Routes>
           <Route exact path='/' element={<Home/>}></Route>
           <Route path='/users' element={<UserList/>}></Route>
+          <Route path='/user/:userId' element={<User/>}></Route>
         </Routes>
       </div>
     </Router> 

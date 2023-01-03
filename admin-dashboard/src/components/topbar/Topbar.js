@@ -23,7 +23,7 @@ export default function Topbar() {
               < DiAptana className='topbar-right-icon'/>
               <span className='topbar-icon-badge'>2</span>
           </div>
-          <img className="topbar-admin-img" src="assets/person/8.jpeg" alt="" />
+          <img className="topbar-admin-img" src="/assets/person/8.jpeg" alt="" />
         </div>
       </div>
     </div>
