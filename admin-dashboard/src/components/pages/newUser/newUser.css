@@ -1,0 +1,35 @@
+.newUser-container {
+    flex: 4;
+    margin-left: 10px;
+}
+
+.newUser-form {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.newUser-item {
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    margin-right: 20px;
+    margin-top: 10px;
+}
+
+.newUser-item>label {
+    margin-bottom: 10px;
+    font-size: 14px;
+    font-weight: 600;
+    color: gray;
+}
+
+.newUser-item>input {
+    height: 20px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid gray;
+
+}
+.newUser-item>input:focus {
+    outline: none;
+}

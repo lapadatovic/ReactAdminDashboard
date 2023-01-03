@@ -2,13 +2,16 @@ import React from 'react'
 import './user.css'
 import {MdPublish, MdOutlinePermIdentity, MdPhonelinkRing, MdOutlineEmail,MdOutlineLocationOn} from 'react-icons/md'
 import {FaBirthdayCake} from 'react-icons/fa'
+import { Link } from 'react-router-dom'
 
 export default function User() {
   return (
     <div className='user-container'>
         <div className="user-title-container">
           <h1 className="user-title">Edit User</h1>
-          <button className="user-add-button">Create</button>
+          <Link to='/newUser'>
+            <button className="user-add-button">Create</button>
+          </Link>
         </div>
         <div className="user">
           <div className="user-show">

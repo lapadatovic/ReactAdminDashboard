@@ -10,6 +10,7 @@ import {
 	Routes,
 	Route,
 } from 'react-router-dom';
+import NewUser from './components/pages/newUser/NewUser';
 
 
 function App() {
@@ -22,6 +23,7 @@ function App() {
           <Route exact path='/' element={<Home/>}></Route>
           <Route path='/users' element={<UserList/>}></Route>
           <Route path='/user/:userId' element={<User/>}></Route>
+          <Route path='/newUser' element={<NewUser />}></Route>
         </Routes>
       </div>
     </Router> 
