@@ -3,7 +3,7 @@ import './sidebar.css'
 import {MdShowChart,MdLineStyle,MdAttachMoney,MdFeedback,MdOutlineMessage,MdReportProblem } from 'react-icons/md'
 import {FaChartLine, FaRegUser} from 'react-icons/fa'
 import {BsBoxSeam,BsBarChart,BsMailbox,BsBriefcase} from 'react-icons/bs'
-// import { Link } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 export default function Sidebar() {
   return (
     <div className='sidebar-container'>
@@ -12,10 +12,12 @@ export default function Sidebar() {
             <div className="sidebar-menu">
               <h3 className="sidebar-title">Dashboard</h3>
               <ul className="sidebar-list">
-                <li className="sidebar-list-item">
-                  <MdLineStyle className='sidebar-list-icon' />
-                  Home
-                </li>
+                <Link className='link' to='/'>
+                  <li className="sidebar-list-item">
+                    <MdLineStyle className='sidebar-list-icon' />
+                    Home
+                  </li>
+                </Link>
                 <li className="sidebar-list-item">
                   <MdShowChart className='sidebar-list-icon'/>
                   Analytics
@@ -30,14 +32,18 @@ export default function Sidebar() {
             <div className="sidebar-menu">
               <h3 className="sidebar-title">Quick Menu</h3>
               <ul className="sidebar-list">
-                <li className="sidebar-list-item">
-                  <FaRegUser className='sidebar-list-icon' />
-                  Users
-                </li>
-                <li className="sidebar-list-item">
-                  <BsBoxSeam className='sidebar-list-icon'/>
-                  Products
-                </li>
+                <Link className='link' to='/users'>
+                  <li className="sidebar-list-item">
+                    <FaRegUser className='sidebar-list-icon' />
+                    Users
+                  </li>
+                </Link>
+                <Link className='link' to='/products'>
+                  <li className="sidebar-list-item">
+                    <BsBoxSeam className='sidebar-list-icon'/>
+                    Products
+                  </li>
+                </Link>
                 <li className="sidebar-list-item">
                   < MdAttachMoney className='sidebar-list-icon'/>
                   Transactions
