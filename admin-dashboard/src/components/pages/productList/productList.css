@@ -1,3 +1,31 @@
 .productList-container{
     flex: 4;
 }
+
+.productList-edit-button {
+    border: none;
+    border-radius: 10px;
+    padding: 5px 10px;
+    background-color:#3bb077 ; 
+    cursor: pointer;
+    color: white;
+    margin-right: 10px;
+ }
+ 
+.productList-action {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+ }
+ 
+.productList-delete-button{
+    font-size: 1.5rem !important;
+    color: red !important;
+}
+
+.productList-img {
+    width: 150px;
+    object-fit: cover;
+
+}
+
