@@ -3,9 +3,7 @@ import './product.css'
 import Chart from '../../chart/Chart'
 import { Link, useParams } from 'react-router-dom'
 import { productData ,productRows } from '../../../dummyData'
-
-
-
+import {MdPublish} from 'react-icons/md'
 export default function Product() {
     let {productId} = useParams();
     let products = productRows;
@@ -35,22 +33,24 @@ export default function Product() {
                 </div>
                 <div className="product-info-bottom">
                     <div className="product.info-item">
-                        <span className="product-info-value">Price:{product[0].price}</span>
+                        <span className="product-info-value">Price:</span>
+                        <span className="product-info-key">{product[0].price}</span>
                     </div>
                     <div className="product.info-item">
-                        <span className="product-info-key">{product[0].stock ? `Stock: ${product[0].stock}` : 'Out of stock'}</span>
-                        {/* <span className="product-info-value">Price:{product[0].price}</span> */}
+                        <span className="product-info-value">Stock:</span>
+                        <span className="product-info-key">{product[0].stock ? `${product[0].stock}` : 'Out of stock'}</span>
                     </div>
                     <div className="product.info-item">
+                        <span className="product-info-value">Active:</span>
                         <span className="product-info-key">{product[0].stock ? 'Active' : 'Not active'}</span>
                     </div>
                 </div>
             </div>
         </div>
         <div className="product-bottom">
-            <form action="" className="product-form">
+            <form className="product-form">
                  <div className="product-form-left">
-                    <label htmlFor="">Product Name</label>
+                    <label>Product Name</label>
                     <input type="text" placeholder={product[0].productName}/>
                     <label>{product[0].stock ? `Stock: ${product[0].stock}` : 'Out of stock'}</label>
                     <select className="product-form-select" name="inStock" id="idStock">
@@ -64,7 +64,12 @@ export default function Product() {
                     </select>
                  </div>
                  <div className="product-form-right">
-                    <div className="product-upload"></div>
+                    <div className="product-upload">
+                        <img className='product-upload-image' src={product[0].productImage} alt="" />
+                        <label for="file"><MdPublish/></label>
+                        <input type="file" id='file' style={ {display:'none'} }/>
+                        <button className='product-update-button'>Update</button>
+                    </div>
                  </div>
             </form>
         </div>
